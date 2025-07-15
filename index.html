@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enya Aguiar | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #0d1b2a 0%, #000000 100%);
+      color: #fefefe;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p#subtitle {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #36839f;
+      min-height: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #7ec8e3;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #7ec8e3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 4px solid #7ec8e3;
+      padding-left: 10px;
+    }
+
+    .portfolio {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .portfolio h3 {
+      color: #7ec8e3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9rem;
+      background-color: #000000;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background-color: #7ec8e3;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #7ec8e3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 290px;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Enya Aguiar</h1>
+    <p id="subtitle" style="text-align: center;">Full-Stack Developer in Training </p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Systems Development student at Proz, focusing on becoming a full-stack developer. I have knowledge of Python, HTML, and CSS. I also have a basic understanding of Git, GitHub, and Linux. I am seeking my first opportunity in the technology field to apply what I have learned and grow professionally. I enjoy creating functional, organized, and visually appealing solutions.
+    </p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Projects</h2>
+    <div class="portfolio">
+      <h3>Calculator in JavaScript</h3>
+      <p>A simple calculator with basic operations developed in HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch at <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a> or on <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enya Aguiar. All rights reserved.</p>
+  </footer>
+
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
+
+  <script>
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
