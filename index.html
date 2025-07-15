@@ -33,16 +33,21 @@
     }
 
     header p#subtitle {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #36839f;
-      min-height: 24px;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 2px solid #7ec8e3;
-      width: 0;
-      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
-    }
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #36839f;
+  min-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 15ch;
+  border-right: none;
+  animation: typing 3s steps(15, end) forwards, blink 0.75s step-end 4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+    
 
     nav {
       position: fixed;
@@ -137,14 +142,16 @@
 <body>
   <nav>
     <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header>
     <h1>Enya Aguiar</h1>
-    <p id="subtitle" style="text-align: center;">Full-Stack Developer in Training </p>
+    <p id="subtitle">Full-Stack Developer in Training </p>
   </header>
+  
 
   <section id="about">
     <h2>About Me</h2>
@@ -153,9 +160,9 @@
     </p>
   </section>
 
-  <section id="portfolio">
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="portfolio">
+    <div class="projects">
       <h3>Calculator in JavaScript</h3>
       <p>A simple calculator with basic operations developed in HTML, CSS, and JavaScript.</p>
     </div>
@@ -163,16 +170,15 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Get in touch at <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a> or on <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
+    <p>Get in touch at <p>
+      <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a> or on <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
     </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Enya Aguiar. All rights reserved.</p>
   </footer>
-
-  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
-
+  
   <script>
     window.onscroll = function () {
       const btn = document.getElementById("topBtn");
