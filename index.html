@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,21 +33,18 @@
     }
 
     header p#subtitle {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #36839f;
-  min-height: 24px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 15ch;
-  border-right: none;
-  animation: typing 3s steps(15, end) forwards, blink 0.75s step-end 4;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-    
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #36839f;
+      min-height: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 15ch;
+      border-right: none;
+      animation: typing 3s steps(15, end) forwards, blink 0.75s step-end 4;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     nav {
       position: fixed;
@@ -86,42 +83,74 @@
       margin-bottom: 20px;
     }
 
-    #skills {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+    #projects {
+      margin-top: 30px;
+    }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
+    .projects h2 {
+      text-align: left;
+      margin-bottom: 30px;
+    }
 
-.skills-list span {
-  background-color: #1a1a1a;
-  color: #7ec8e3;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  border: 1px solid #36839f;
-  box-shadow: 0 0 10px rgba(126, 200, 227, 0.2);
-  transition: 0.3s;
-}
+    .project {
+      background-color: #1a1a1a;
+      color: #fefefe;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(126, 200, 227, 0.3);
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.skills-list span:hover {
-  background-color: #36839f;
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(126, 200, 227, 0.6);
-}
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
 
+    .project p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
 
-    .portfolio h3 {
+    .project a {
+      font-size: 1rem;
       color: #7ec8e3;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      color: #36839f;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skills-list span {
+      background-color: #1a1a1a;
+      color: #7ec8e3;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+      border: 1px solid #36839f;
+      box-shadow: 0 0 10px rgba(126, 200, 227, 0.2);
+      transition: 0.3s;
+    }
+
+    .skills-list span:hover {
+      background-color: #36839f;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(126, 200, 227, 0.6);
     }
 
     footer {
@@ -171,6 +200,25 @@
         border-color: transparent;
       }
     }
+
+    #soft-skills {
+      margin-top: 30px;
+    }
+
+    #soft-skills h2 {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    #soft-skills ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+    }
+
+    #soft-skills li {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -178,47 +226,89 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#soft-skills">Soft Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header>
     <h1>Enya Aguiar</h1>
-    <p id="subtitle">Full-Stack Developer in Training </p>
+    <p id="subtitle">Full-Stack Developer in Training</p>
   </header>
-  
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-     I am a Systems Development student at Proz, focusing on becoming a full-stack developer. I have knowledge of Python, HTML, and CSS. I also have Git, GitHub, and Linux skills. I am seeking my first opportunity in the technology field to apply what I have learned and grow professionally.
-     <p>My goal is to join real projects where I can apply everything I’m learning and continue evolving as a developer.</p>
-     <p>I'm proactive, communicative, and always looking for practical experiences that challenge and improve my skills. I value collaboration, continuous learning, and building things that make a difference.</p>
+      I am a Systems Development student at Proz, focusing on becoming a full-stack developer. I have knowledge of Python, HTML, and CSS. I also have Git, GitHub, and Linux skills. I am seeking my first opportunity in the technology field to apply what I have learned and grow professionally.
     </p>
+    <p>My goal is to join real projects where I can apply everything I’m learning and continue evolving as a developer.</p>
+    <p>I'm creative, communicative, and always looking for practical experiences that challenge and improve my skills. I value collaboration, learning, and building things that make a difference.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <h3>Calculator in JavaScript</h3>
-      <p>A simple calculator with basic operations developed in HTML, CSS, and JavaScript.</p>
+    <div class="project">
+      <h3>Python Password Generator</h3>
+      <p>A simple project for generating random passwords using Python.</p>
+      <a href="https://github.com/enyaaguiar/python-password-generator" style="color:#7ec8e3;">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>HTML Password Generator</h3>
+      <p>A simple project to generate random passwords using HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/enyaaguiar/html-password-generator" style="color:#7ec8e3;">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Binary Converter</h3>
+      <p>A simple project to convert binary numbers to decimal.</p>
+      <a href="https://github.com/enyaaguiar/binary_converter" style="color:#7ec8e3;">View on GitHub</a>
     </div>
   </section>
+
   <section id="skills">
-  <h2>Skills</h2>
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Git & GitHub</span>
+      <span>JavaScript</span>
+      <span>SQL</span>
+      <span>Linux</span>
+    </div>
+  </section>
+
+<section id="soft-skills">
+  <h2>Soft Skills</h2>
   <div class="skills-list">
-    <span>Python</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Git & GitHub</span>
-    <span>Linux</span>
+    <span class="skill"><i class="fas fa-comments"></i> Communication</span>
+    <span class="skill"><i class="fas fa-users"></i> Teamwork</span>
+    <span class="skill"><i class="fas fa-lightbulb"></i> Proactivity</span>
+    <span class="skill"><i class="fas fa-sync-alt"></i> Adaptability</span>
+    <span class="skill"><i class="fas fa-clock"></i> Time Management</span>
   </div>
 </section>
 
+  </div>
+</section>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Get in touch at <p>
-      <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a> or on <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
+    <p>Get in touch at</p>
+    <a href="tel:(31)999560093" style="color:#7ec8e3;">(31) 99956-0093</a>
+    <p> Or email me at
+      <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a>
+    </p>
+    <p>You can also find me on
+      <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
     </p>
   </section>
 
