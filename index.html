@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enya Aguiar | Portfolio</title>
   <style>
-    * {
+    body
+    {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #490f58 0%, #000000 100%); 
+      color: #fefefe;
+      overflow-x: hidden;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      line-height: 1.6;
+      width: 100%;
     }
 
     html {
       scroll-behavior: smooth;
     }
 
-    body {
-      background: radial-gradient(circle at center, #0d1b2a 0%, #000000 100%);
-      color: #fefefe;
-      overflow-x: hidden;
-    }
-
+    
     header {
       text-align: center;
       padding: 100px 20px 40px;
@@ -35,7 +39,7 @@
     header p#subtitle {
       margin-top: 10px;
       font-size: 1.2rem;
-      color: #36839f;
+      color: #f3f0f4;
       min-height: 24px;
       white-space: nowrap;
       overflow: hidden;
@@ -59,7 +63,7 @@
     }
 
     nav a {
-      color: #7ec8e3;
+      color: #f9f9f9;
       text-decoration: none;
       font-weight: bold;
     }
@@ -72,7 +76,7 @@
 
     h2 {
       margin-bottom: 20px;
-      border-left: 4px solid #7ec8e3;
+      border-left: 4px solid #490f58;
       padding-left: 10px;
     }
 
@@ -101,7 +105,7 @@
       width: 80%;
       max-width: 600px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(126, 200, 227, 0.3);
+      box-shadow: 0 0 10px #490f58;
       margin-left: auto;
       margin-right: auto;
     }
@@ -118,12 +122,12 @@
 
     .project a {
       font-size: 1rem;
-      color: #7ec8e3;
+      color: #490f58;
       text-decoration: none;
     }
 
     .project a:hover {
-      color: #36839f;
+      color: #490f58;
     }
 
     .skills-list {
@@ -135,29 +139,28 @@
     }
 
     .skills-list span {
-      background-color: #1a1a1a;
-      color: #7ec8e3;
+      background-color: #000000;
+      color: #e1d9e3;
       padding: 10px 20px;
       border-radius: 20px;
       font-weight: bold;
       font-size: 1rem;
-      border: 1px solid #36839f;
-      box-shadow: 0 0 10px rgba(126, 200, 227, 0.2);
+      border: 1px solid #490f58;
+      box-shadow: 0 0 10px #490f58;
       transition: 0.3s;
     }
 
     .skills-list span:hover {
-      background-color: #36839f;
+      background-color: #490f58;
       color: #fff;
       transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(126, 200, 227, 0.6);
+      box-shadow: 0 0 15px #490f58;
     }
 
     footer {
       text-align: center;
       padding: 40px;
       font-size: 0.9rem;
-      background-color: #000000;
     }
 
     #topBtn {
@@ -166,13 +169,13 @@
       bottom: 30px;
       right: 30px;
       z-index: 999;
-      background-color: #7ec8e3;
+      background-color: #490f58;
       color: #000;
       border: none;
       padding: 10px 15px;
       border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 0 10px #7ec8e3;
+      box-shadow: 0 0 10px #490f58;
     }
 
     @keyframes fadeIn {
@@ -249,19 +252,19 @@
     <div class="project">
       <h3>Python Password Generator</h3>
       <p>A simple project for generating random passwords using Python.</p>
-      <a href="https://github.com/enyaaguiar/python-password-generator" style="color:#7ec8e3;">View on GitHub</a>
+      <a href="https://github.com/enyaaguiar/python-password-generator" style="color:#ba1ae2ac;">View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>HTML Password Generator</h3>
       <p>A simple project to generate random passwords using HTML, CSS, and JavaScript.</p>
-      <a href="https://github.com/enyaaguiar/html-password-generator" style="color:#7ec8e3;">View on GitHub</a>
+      <a href="https://github.com/enyaaguiar/html-password-generator" style="color:#ba1ae2ac;">View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>Binary Converter</h3>
       <p>A simple project to convert binary numbers to decimal.</p>
-      <a href="https://github.com/enyaaguiar/binary_converter" style="color:#7ec8e3;">View on GitHub</a>
+      <a href="https://github.com/enyaaguiar/binary_converter" style="color:#ba1ae2ac;">View on GitHub</a>
     </div>
   </section>
 
@@ -303,12 +306,12 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Get in touch at</p>
-    <a href="tel:(31)999560093" style="color:#7ec8e3;">(31) 99956-0093</a>
+    <a href="tel:(31)999560093" style="color:#ba1ae2ac;">(31) 99956-0093</a>
     <p> Or email me at
-      <a href="mailto:enyaaguiar@gmail.com" style="color:#7ec8e3;">enyaaguiar@gmail.com</a>
+      <a href="mailto:enyaaguiar@gmail.com" style="color:#ba1ae2ac;">enyaaguiar@gmail.com</a>
     </p>
     <p>You can also find me on
-      <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#7ec8e3;">LinkedIn</a>.
+      <a href="https://www.linkedin.com/in/enya-aguiar-b193461a2/" style="color:#ba1ae2;">LinkedIn</a>.
     </p>
   </section>
 
